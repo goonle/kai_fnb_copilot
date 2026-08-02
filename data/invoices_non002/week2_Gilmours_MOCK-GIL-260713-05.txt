@@ -1,0 +1,27 @@
+MOCK INVOICE  Gilmours
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Nonna's Trattoria Ltd (Fictional)
+45 Demo Terrace, Auckland
+Customer account: DEMO-ACCT-002
+Invoice no. MOCK-GIL-260713-05
+Issue date 13 Jul 2026
+Due date 27 Jul 2026
+PO number PO-DEMO-4305
+
+Description                                     Qty   Unit(NZD)    Line total
+Fresh Cream (Italian) (2L/pack)                   5       13.60         68.00
+Fresh Tomato (Italian) (1kg/pack)                 8        5.90         47.20
+Pizza Dough Base (5kg/pack)                       9       21.00        189.00
+
+Subtotal                                                           304.20
+Freight                                                             18.00
+GST 15%                                                             48.33
+TOTAL NZD                                                          370.53
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-GIL-260713-05
+SYNTHETIC MOCK - NOT A REAL INVOICE

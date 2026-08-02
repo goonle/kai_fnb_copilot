@@ -1,0 +1,26 @@
+MOCK INVOICE  South Pacific Seafoods NZ
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-SOU-260706-01
+Issue date 06 Jul 2026
+Due date 20 Jul 2026
+PO number PO-DEMO-4101
+
+Description                                     Qty   Unit(NZD)    Line total
+Fresh Salmon Fillet (1kg/pack)                   47       34.50       1621.50
+Prawn (Peeled) (1kg/pack)                         7       28.90        202.30
+
+Subtotal                                                          1823.80
+Freight                                                              0.00
+GST 15%                                                            273.57
+TOTAL NZD                                                         2097.37
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-SOU-260706-01
+SYNTHETIC MOCK - NOT A REAL INVOICE

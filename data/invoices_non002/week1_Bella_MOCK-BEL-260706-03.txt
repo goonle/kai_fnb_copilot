@@ -1,0 +1,32 @@
+MOCK INVOICE  Bella Italia Imports NZ (Fictional)
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Nonna's Trattoria Ltd (Fictional)
+45 Demo Terrace, Auckland
+Customer account: DEMO-ACCT-002
+Invoice no. MOCK-BEL-260706-03
+Issue date 07 Jul 2026
+Due date 21 Jul 2026
+PO number PO-DEMO-4303
+
+Description                                     Qty   Unit(NZD)    Line total
+Ciabatta Bread (1ea/pack)                     17906        3.20      57299.20
+Espresso Coffee (1kg/pack)                        2       28.00         56.00
+Fettuccine Pasta (5kg/pack)                       3       21.00         63.00
+Lasagna Sheet (3kg/pack)                          3       19.20         57.60
+Mascarpone Cheese (1kg/pack)                      7       16.80        117.60
+Penne Pasta (5kg/pack)                            2       19.25         38.50
+Spaghetti Pasta (5kg/pack)                        4       19.50         78.00
+Tomato Sauce (Italian) (4L/pack)                  7       38.40        268.80
+
+Subtotal                                                         57978.70
+Freight                                                             12.50
+GST 15%                                                           8698.68
+TOTAL NZD                                                        66689.88
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-BEL-260706-03
+SYNTHETIC MOCK - NOT A REAL INVOICE

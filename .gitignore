@@ -1,0 +1,24 @@
+# Secrets — never commit real credentials
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.env
+*.env
+*.p8
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+.ipynb_checkpoints/

@@ -1,0 +1,27 @@
+MOCK INVOICE  Bidfood NZ
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-BID-260713-12
+Issue date 14 Jul 2026
+Due date 28 Jul 2026
+PO number PO-DEMO-4112
+
+Description                                     Qty   Unit(NZD)    Line total
+Beef Short Rib Sliced (1kg/pack)                 11       24.60        270.60
+Chicken Breast (1kg/pack)                        66       11.20        739.20
+Chicken Thigh (1kg/pack)                         22        9.80        215.60
+
+Subtotal                                                          1225.40
+Freight                                                             24.00
+GST 15%                                                            187.41
+TOTAL NZD                                                         1436.81
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-BID-260713-12
+SYNTHETIC MOCK - NOT A REAL INVOICE

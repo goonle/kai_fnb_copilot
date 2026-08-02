@@ -1,0 +1,29 @@
+MOCK INVOICE  Service Foods
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-SER-260727-25
+Issue date 29 Jul 2026
+Due date 12 Aug 2026
+PO number PO-DEMO-4125
+
+Description                                     Qty   Unit(NZD)    Line total
+Crab Stick (1kg/pack)                             6        9.40         56.40
+Edamame (Frozen) (2kg/pack)                       5       19.80         99.00
+Frozen Gyoza (2kg/pack)                           6       27.20        163.20
+Frozen Tuna Loin (1kg/pack)                      17       26.80        455.60
+Mixed Vegetables (IQF) (2kg/pack)                 4       16.90         67.60
+
+Subtotal                                                           841.80
+Freight                                                             12.50
+GST 15%                                                            128.15
+TOTAL NZD                                                          982.45
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-SER-260727-25
+SYNTHETIC MOCK - NOT A REAL INVOICE

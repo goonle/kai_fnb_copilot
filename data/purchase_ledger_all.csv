@@ -1,0 +1,209 @@
+business_id,week_start,vendor,ingredient,ingredient_id,qty_packs,pack_size,unit,unit_price_number,unit_price_unit,line_total_number,line_total_unit
+HSC001,2026-07-06,South Pacific Seafoods NZ,Fresh Salmon Fillet,ING001,47,1.0,kg,34.5,NZD,1621.5,NZD
+HSC001,2026-07-06,South Pacific Seafoods NZ,Prawn (Peeled),ING002,7,1.0,kg,28.9,NZD,202.3,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Curry Roux,ING022,2,5.0,kg,15.8,NZD,158.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Dashi Stock,ING023,6,10.0,L,9.6,NZD,576.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Katsu Sauce,ING020,1,4.0,L,17.9,NZD,71.6,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Miso Paste,ING024,1,5.0,kg,14.2,NZD,71.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Nori Sheet,ING015,252,1.0,pkt(100sheets),24.5,NZD,6174.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Seaweed Salad Mix,ING027,3,2.0,kg,22.0,NZD,132.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Sesame Dressing,ING018,1,4.0,L,19.8,NZD,79.2,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Sesame Seed,ING025,1,1.0,kg,12.9,NZD,12.9,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Soy Sauce,ING016,1,5.0,L,18.9,NZD,94.5,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Spicy Mayo,ING019,1,4.0,L,16.5,NZD,66.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Sushi Rice,ING014,23,10.0,kg,42.0,NZD,9660.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Teriyaki Sauce,ING017,2,4.0,L,22.4,NZD,179.2,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Udon Noodle,ING026,6,5.0,kg,8.4,NZD,252.0,NZD
+HSC001,2026-07-06,Nishi Asian Foods NZ (Fictional),Yakiniku Sauce,ING021,1,4.0,L,20.6,NZD,82.4,NZD
+HSC001,2026-07-06,Gilmours,Avocado,ING011,3865,1.0,ea,1.9,NZD,7343.5,NZD
+HSC001,2026-07-06,Gilmours,Cherry Tomato,ING009,3,1.0,kg,6.4,NZD,19.2,NZD
+HSC001,2026-07-06,Gilmours,Cucumber,ING010,4,1.0,kg,3.8,NZD,15.2,NZD
+HSC001,2026-07-06,Gilmours,Firm Tofu,ING013,8,1.0,kg,6.2,NZD,49.6,NZD
+HSC001,2026-07-06,Gilmours,Mixed Salad Greens,ING008,11,1.0,kg,8.9,NZD,97.9,NZD
+HSC001,2026-07-06,Gilmours,Spring Onion,ING012,3,1.0,kg,5.6,NZD,16.8,NZD
+HSC001,2026-07-06,Service Foods,Crab Stick,ING004,5,1.0,kg,9.4,NZD,47.0,NZD
+HSC001,2026-07-06,Service Foods,Edamame (Frozen),ING033,5,2.0,kg,9.9,NZD,99.0,NZD
+HSC001,2026-07-06,Service Foods,Frozen Gyoza,ING034,6,2.0,kg,13.6,NZD,163.2,NZD
+HSC001,2026-07-06,Service Foods,Frozen Tuna Loin,ING003,18,1.0,kg,26.8,NZD,482.4,NZD
+HSC001,2026-07-06,Service Foods,Mixed Vegetables (IQF),ING032,4,2.0,kg,8.45,NZD,67.6,NZD
+HSC001,2026-07-06,Bidfood NZ,Beef Short Rib Sliced,ING007,10,1.0,kg,24.6,NZD,246.0,NZD
+HSC001,2026-07-06,Bidfood NZ,Chicken Breast,ING005,51,1.0,kg,11.2,NZD,571.2,NZD
+HSC001,2026-07-06,Bidfood NZ,Chicken Thigh,ING006,20,1.0,kg,9.8,NZD,196.0,NZD
+HSC001,2026-07-06,Moore Wilson's,Panko Breadcrumb,ING028,2,5.0,kg,6.8,NZD,68.0,NZD
+HSC001,2026-07-06,Moore Wilson's,Potato Starch,ING029,1,5.0,kg,5.4,NZD,27.0,NZD
+HSC001,2026-07-06,Moore Wilson's,Tempura Batter Mix,ING030,1,5.0,kg,7.2,NZD,36.0,NZD
+HSC001,2026-07-06,Trents Wholesale,Canola Oil,ING031,1,20.0,L,3.75,NZD,75.0,NZD
+HSC001,2026-07-13,South Pacific Seafoods NZ,Fresh Salmon Fillet,ING001,54,1.0,kg,34.5,NZD,1863.0,NZD
+HSC001,2026-07-13,South Pacific Seafoods NZ,Prawn (Peeled),ING002,7,1.0,kg,28.9,NZD,202.3,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Curry Roux,ING022,2,5.0,kg,15.8,NZD,158.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Dashi Stock,ING023,7,10.0,L,9.6,NZD,672.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Katsu Sauce,ING020,1,4.0,L,17.9,NZD,71.6,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Miso Paste,ING024,1,5.0,kg,14.2,NZD,71.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Nori Sheet,ING015,241,1.0,pkt(100sheets),24.5,NZD,5904.5,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Seaweed Salad Mix,ING027,3,2.0,kg,22.0,NZD,132.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Sesame Dressing,ING018,1,4.0,L,19.8,NZD,79.2,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Sesame Seed,ING025,1,1.0,kg,12.9,NZD,12.9,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Soy Sauce,ING016,1,5.0,L,18.9,NZD,94.5,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Spicy Mayo,ING019,1,4.0,L,16.5,NZD,66.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Sushi Rice,ING014,26,10.0,kg,42.0,NZD,10920.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Teriyaki Sauce,ING017,2,4.0,L,22.4,NZD,179.2,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Udon Noodle,ING026,6,5.0,kg,8.4,NZD,252.0,NZD
+HSC001,2026-07-13,Nishi Asian Foods NZ (Fictional),Yakiniku Sauce,ING021,1,4.0,L,20.6,NZD,82.4,NZD
+HSC001,2026-07-13,Gilmours,Avocado,ING011,3989,1.0,ea,1.9,NZD,7579.1,NZD
+HSC001,2026-07-13,Gilmours,Cherry Tomato,ING009,4,1.0,kg,6.4,NZD,25.6,NZD
+HSC001,2026-07-13,Gilmours,Cucumber,ING010,4,1.0,kg,3.8,NZD,15.2,NZD
+HSC001,2026-07-13,Gilmours,Firm Tofu,ING013,8,1.0,kg,6.2,NZD,49.6,NZD
+HSC001,2026-07-13,Gilmours,Mixed Salad Greens,ING008,13,1.0,kg,8.9,NZD,115.7,NZD
+HSC001,2026-07-13,Gilmours,Spring Onion,ING012,3,1.0,kg,5.6,NZD,16.8,NZD
+HSC001,2026-07-13,Service Foods,Crab Stick,ING004,5,1.0,kg,9.4,NZD,47.0,NZD
+HSC001,2026-07-13,Service Foods,Edamame (Frozen),ING033,4,2.0,kg,9.9,NZD,79.2,NZD
+HSC001,2026-07-13,Service Foods,Frozen Gyoza,ING034,7,2.0,kg,13.6,NZD,190.4,NZD
+HSC001,2026-07-13,Service Foods,Frozen Tuna Loin,ING003,19,1.0,kg,26.8,NZD,509.2,NZD
+HSC001,2026-07-13,Service Foods,Mixed Vegetables (IQF),ING032,5,2.0,kg,8.45,NZD,84.5,NZD
+HSC001,2026-07-13,Bidfood NZ,Beef Short Rib Sliced,ING007,11,1.0,kg,24.6,NZD,270.6,NZD
+HSC001,2026-07-13,Bidfood NZ,Chicken Breast,ING005,66,1.0,kg,11.2,NZD,739.2,NZD
+HSC001,2026-07-13,Bidfood NZ,Chicken Thigh,ING006,22,1.0,kg,9.8,NZD,215.6,NZD
+HSC001,2026-07-13,Moore Wilson's,Panko Breadcrumb,ING028,2,5.0,kg,6.8,NZD,68.0,NZD
+HSC001,2026-07-13,Moore Wilson's,Potato Starch,ING029,1,5.0,kg,5.4,NZD,27.0,NZD
+HSC001,2026-07-13,Moore Wilson's,Tempura Batter Mix,ING030,1,5.0,kg,7.2,NZD,36.0,NZD
+HSC001,2026-07-13,Trents Wholesale,Canola Oil,ING031,1,20.0,L,3.75,NZD,75.0,NZD
+HSC001,2026-07-20,South Pacific Seafoods NZ,Fresh Salmon Fillet,ING001,56,1.0,kg,34.5,NZD,1932.0,NZD
+HSC001,2026-07-20,South Pacific Seafoods NZ,Prawn (Peeled),ING002,8,1.0,kg,28.9,NZD,231.2,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Curry Roux,ING022,2,5.0,kg,15.8,NZD,158.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Dashi Stock,ING023,7,10.0,L,9.6,NZD,672.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Katsu Sauce,ING020,1,4.0,L,17.9,NZD,71.6,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Miso Paste,ING024,1,5.0,kg,14.2,NZD,71.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Nori Sheet,ING015,280,1.0,pkt(100sheets),24.5,NZD,6860.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Seaweed Salad Mix,ING027,3,2.0,kg,22.0,NZD,132.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Sesame Dressing,ING018,1,4.0,L,19.8,NZD,79.2,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Sesame Seed,ING025,1,1.0,kg,12.9,NZD,12.9,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Soy Sauce,ING016,1,5.0,L,18.9,NZD,94.5,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Spicy Mayo,ING019,1,4.0,L,16.5,NZD,66.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Sushi Rice,ING014,20,10.0,kg,42.0,NZD,8400.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Teriyaki Sauce,ING017,2,4.0,L,22.4,NZD,179.2,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Udon Noodle,ING026,6,5.0,kg,8.4,NZD,252.0,NZD
+HSC001,2026-07-20,Nishi Asian Foods NZ (Fictional),Yakiniku Sauce,ING021,1,4.0,L,20.6,NZD,82.4,NZD
+HSC001,2026-07-20,Gilmours,Avocado,ING011,3521,1.0,ea,1.9,NZD,6689.9,NZD
+HSC001,2026-07-20,Gilmours,Cherry Tomato,ING009,4,1.0,kg,6.4,NZD,25.6,NZD
+HSC001,2026-07-20,Gilmours,Cucumber,ING010,4,1.0,kg,3.8,NZD,15.2,NZD
+HSC001,2026-07-20,Gilmours,Firm Tofu,ING013,8,1.0,kg,6.2,NZD,49.6,NZD
+HSC001,2026-07-20,Gilmours,Mixed Salad Greens,ING008,11,1.0,kg,8.9,NZD,97.9,NZD
+HSC001,2026-07-20,Gilmours,Spring Onion,ING012,3,1.0,kg,5.6,NZD,16.8,NZD
+HSC001,2026-07-20,Service Foods,Crab Stick,ING004,6,1.0,kg,9.4,NZD,56.4,NZD
+HSC001,2026-07-20,Service Foods,Edamame (Frozen),ING033,5,2.0,kg,9.9,NZD,99.0,NZD
+HSC001,2026-07-20,Service Foods,Frozen Gyoza,ING034,8,2.0,kg,13.6,NZD,217.6,NZD
+HSC001,2026-07-20,Service Foods,Frozen Tuna Loin,ING003,20,1.0,kg,26.8,NZD,536.0,NZD
+HSC001,2026-07-20,Service Foods,Mixed Vegetables (IQF),ING032,4,2.0,kg,8.45,NZD,67.6,NZD
+HSC001,2026-07-20,Bidfood NZ,Beef Short Rib Sliced,ING007,9,1.0,kg,24.6,NZD,221.4,NZD
+HSC001,2026-07-20,Bidfood NZ,Chicken Breast,ING005,61,1.0,kg,11.2,NZD,683.2,NZD
+HSC001,2026-07-20,Bidfood NZ,Chicken Thigh,ING006,20,1.0,kg,9.8,NZD,196.0,NZD
+HSC001,2026-07-20,Moore Wilson's,Panko Breadcrumb,ING028,2,5.0,kg,6.8,NZD,68.0,NZD
+HSC001,2026-07-20,Moore Wilson's,Potato Starch,ING029,1,5.0,kg,5.4,NZD,27.0,NZD
+HSC001,2026-07-20,Moore Wilson's,Tempura Batter Mix,ING030,1,5.0,kg,7.2,NZD,36.0,NZD
+HSC001,2026-07-20,Trents Wholesale,Canola Oil,ING031,1,20.0,L,3.75,NZD,75.0,NZD
+HSC001,2026-07-27,South Pacific Seafoods NZ,Fresh Salmon Fillet,ING001,52,1.0,kg,34.5,NZD,1794.0,NZD
+HSC001,2026-07-27,South Pacific Seafoods NZ,Prawn (Peeled),ING002,7,1.0,kg,28.9,NZD,202.3,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Curry Roux,ING022,2,5.0,kg,15.8,NZD,158.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Dashi Stock,ING023,7,10.0,L,9.6,NZD,672.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Katsu Sauce,ING020,1,4.0,L,17.9,NZD,71.6,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Miso Paste,ING024,1,5.0,kg,14.2,NZD,71.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Nori Sheet,ING015,274,1.0,pkt(100sheets),24.5,NZD,6713.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Seaweed Salad Mix,ING027,3,2.0,kg,22.0,NZD,132.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Sesame Dressing,ING018,1,4.0,L,19.8,NZD,79.2,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Sesame Seed,ING025,1,1.0,kg,12.9,NZD,12.9,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Soy Sauce,ING016,1,5.0,L,18.9,NZD,94.5,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Spicy Mayo,ING019,1,4.0,L,16.5,NZD,66.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Sushi Rice,ING014,21,10.0,kg,42.0,NZD,8820.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Teriyaki Sauce,ING017,2,4.0,L,22.4,NZD,179.2,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Udon Noodle,ING026,6,5.0,kg,8.4,NZD,252.0,NZD
+HSC001,2026-07-27,Nishi Asian Foods NZ (Fictional),Yakiniku Sauce,ING021,1,4.0,L,20.6,NZD,82.4,NZD
+HSC001,2026-07-27,Gilmours,Avocado,ING011,3229,1.0,ea,1.9,NZD,6135.1,NZD
+HSC001,2026-07-27,Gilmours,Cherry Tomato,ING009,5,1.0,kg,6.4,NZD,32.0,NZD
+HSC001,2026-07-27,Gilmours,Cucumber,ING010,4,1.0,kg,3.8,NZD,15.2,NZD
+HSC001,2026-07-27,Gilmours,Firm Tofu,ING013,7,1.0,kg,6.2,NZD,43.4,NZD
+HSC001,2026-07-27,Gilmours,Mixed Salad Greens,ING008,12,1.0,kg,8.9,NZD,106.8,NZD
+HSC001,2026-07-27,Gilmours,Spring Onion,ING012,3,1.0,kg,5.6,NZD,16.8,NZD
+HSC001,2026-07-27,Service Foods,Crab Stick,ING004,6,1.0,kg,9.4,NZD,56.4,NZD
+HSC001,2026-07-27,Service Foods,Edamame (Frozen),ING033,5,2.0,kg,9.9,NZD,99.0,NZD
+HSC001,2026-07-27,Service Foods,Frozen Gyoza,ING034,6,2.0,kg,13.6,NZD,163.2,NZD
+HSC001,2026-07-27,Service Foods,Frozen Tuna Loin,ING003,17,1.0,kg,26.8,NZD,455.6,NZD
+HSC001,2026-07-27,Service Foods,Mixed Vegetables (IQF),ING032,4,2.0,kg,8.45,NZD,67.6,NZD
+HSC001,2026-07-27,Bidfood NZ,Beef Short Rib Sliced,ING007,10,1.0,kg,24.6,NZD,246.0,NZD
+HSC001,2026-07-27,Bidfood NZ,Chicken Breast,ING005,59,1.0,kg,11.2,NZD,660.8,NZD
+HSC001,2026-07-27,Bidfood NZ,Chicken Thigh,ING006,24,1.0,kg,9.8,NZD,235.2,NZD
+HSC001,2026-07-27,Moore Wilson's,Panko Breadcrumb,ING028,2,5.0,kg,6.8,NZD,68.0,NZD
+HSC001,2026-07-27,Moore Wilson's,Potato Starch,ING029,1,5.0,kg,5.4,NZD,27.0,NZD
+HSC001,2026-07-27,Moore Wilson's,Tempura Batter Mix,ING030,1,5.0,kg,7.2,NZD,36.0,NZD
+HSC001,2026-07-27,Trents Wholesale,Canola Oil,ING031,1,20.0,L,3.75,NZD,75.0,NZD
+NON002,2026-07-06,Gilmours,Fresh Cream (Italian),ING043,5,2.0,L,6.8,NZD,68.0,NZD
+NON002,2026-07-06,Gilmours,Fresh Tomato (Italian),ING046,9,1.0,kg,5.9,NZD,53.1,NZD
+NON002,2026-07-06,Gilmours,Pizza Dough Base,ING035,10,5.0,kg,4.2,NZD,210.0,NZD
+NON002,2026-07-06,Moore Wilson's,Garlic Butter,ING048,2,2.0,kg,11.4,NZD,45.6,NZD
+NON002,2026-07-06,Moore Wilson's,Mozzarella Cheese,ING036,23,2.0,kg,13.8,NZD,634.8,NZD
+NON002,2026-07-06,Moore Wilson's,Panko Breadcrumb,ING028,1,5.0,kg,6.8,NZD,34.0,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Ciabatta Bread,ING047,17906,1.0,ea,3.2,NZD,57299.2,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Espresso Coffee,ING050,2,1.0,kg,28.0,NZD,56.0,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Fettuccine Pasta,ING041,3,5.0,kg,4.2,NZD,63.0,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Lasagna Sheet,ING045,3,3.0,kg,6.4,NZD,57.6,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Mascarpone Cheese,ING049,7,1.0,kg,16.8,NZD,117.6,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Penne Pasta,ING044,2,5.0,kg,3.85,NZD,38.5,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Spaghetti Pasta,ING039,4,5.0,kg,3.9,NZD,78.0,NZD
+NON002,2026-07-06,Bella Italia Imports NZ (Fictional),Tomato Sauce (Italian),ING037,7,4.0,L,9.6,NZD,268.8,NZD
+NON002,2026-07-06,Bidfood NZ,Bacon Lardons,ING042,7,1.0,kg,16.9,NZD,118.3,NZD
+NON002,2026-07-06,Bidfood NZ,Beef Mince,ING040,36,1.0,kg,15.6,NZD,561.6,NZD
+NON002,2026-07-06,Bidfood NZ,Chicken Breast,ING005,16,1.0,kg,11.2,NZD,179.2,NZD
+NON002,2026-07-06,Bidfood NZ,Pepperoni Slices,ING038,9,1.0,kg,18.4,NZD,165.6,NZD
+NON002,2026-07-13,Gilmours,Fresh Cream (Italian),ING043,5,2.0,L,6.8,NZD,68.0,NZD
+NON002,2026-07-13,Gilmours,Fresh Tomato (Italian),ING046,8,1.0,kg,5.9,NZD,47.2,NZD
+NON002,2026-07-13,Gilmours,Pizza Dough Base,ING035,9,5.0,kg,4.2,NZD,189.0,NZD
+NON002,2026-07-13,Moore Wilson's,Garlic Butter,ING048,2,2.0,kg,11.4,NZD,45.6,NZD
+NON002,2026-07-13,Moore Wilson's,Mozzarella Cheese,ING036,18,2.0,kg,13.8,NZD,496.8,NZD
+NON002,2026-07-13,Moore Wilson's,Panko Breadcrumb,ING028,1,5.0,kg,6.8,NZD,34.0,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Ciabatta Bread,ING047,18314,1.0,ea,3.2,NZD,58604.8,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Espresso Coffee,ING050,2,1.0,kg,28.0,NZD,56.0,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Fettuccine Pasta,ING041,3,5.0,kg,4.2,NZD,63.0,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Lasagna Sheet,ING045,3,3.0,kg,6.4,NZD,57.6,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Mascarpone Cheese,ING049,8,1.0,kg,16.8,NZD,134.4,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Penne Pasta,ING044,2,5.0,kg,3.85,NZD,38.5,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Spaghetti Pasta,ING039,4,5.0,kg,3.9,NZD,78.0,NZD
+NON002,2026-07-13,Bella Italia Imports NZ (Fictional),Tomato Sauce (Italian),ING037,8,4.0,L,9.6,NZD,307.2,NZD
+NON002,2026-07-13,Bidfood NZ,Bacon Lardons,ING042,7,1.0,kg,16.9,NZD,118.3,NZD
+NON002,2026-07-13,Bidfood NZ,Beef Mince,ING040,31,1.0,kg,15.6,NZD,483.6,NZD
+NON002,2026-07-13,Bidfood NZ,Chicken Breast,ING005,16,1.0,kg,11.2,NZD,179.2,NZD
+NON002,2026-07-13,Bidfood NZ,Pepperoni Slices,ING038,9,1.0,kg,18.4,NZD,165.6,NZD
+NON002,2026-07-20,Gilmours,Fresh Cream (Italian),ING043,5,2.0,L,6.8,NZD,68.0,NZD
+NON002,2026-07-20,Gilmours,Fresh Tomato (Italian),ING046,9,1.0,kg,5.9,NZD,53.1,NZD
+NON002,2026-07-20,Gilmours,Pizza Dough Base,ING035,8,5.0,kg,4.2,NZD,168.0,NZD
+NON002,2026-07-20,Moore Wilson's,Garlic Butter,ING048,2,2.0,kg,11.4,NZD,45.6,NZD
+NON002,2026-07-20,Moore Wilson's,Mozzarella Cheese,ING036,20,2.0,kg,13.8,NZD,552.0,NZD
+NON002,2026-07-20,Moore Wilson's,Panko Breadcrumb,ING028,1,5.0,kg,6.8,NZD,34.0,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Ciabatta Bread,ING047,14542,1.0,ea,3.2,NZD,46534.4,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Espresso Coffee,ING050,2,1.0,kg,28.0,NZD,56.0,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Fettuccine Pasta,ING041,3,5.0,kg,4.2,NZD,63.0,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Lasagna Sheet,ING045,3,3.0,kg,6.4,NZD,57.6,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Mascarpone Cheese,ING049,7,1.0,kg,16.8,NZD,117.6,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Penne Pasta,ING044,2,5.0,kg,3.85,NZD,38.5,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Spaghetti Pasta,ING039,4,5.0,kg,3.9,NZD,78.0,NZD
+NON002,2026-07-20,Bella Italia Imports NZ (Fictional),Tomato Sauce (Italian),ING037,9,4.0,L,9.6,NZD,345.6,NZD
+NON002,2026-07-20,Bidfood NZ,Bacon Lardons,ING042,6,1.0,kg,16.9,NZD,101.4,NZD
+NON002,2026-07-20,Bidfood NZ,Beef Mince,ING040,32,1.0,kg,15.6,NZD,499.2,NZD
+NON002,2026-07-20,Bidfood NZ,Chicken Breast,ING005,14,1.0,kg,11.2,NZD,156.8,NZD
+NON002,2026-07-20,Bidfood NZ,Pepperoni Slices,ING038,9,1.0,kg,18.4,NZD,165.6,NZD
+NON002,2026-07-27,Gilmours,Fresh Cream (Italian),ING043,6,2.0,L,6.8,NZD,81.6,NZD
+NON002,2026-07-27,Gilmours,Fresh Tomato (Italian),ING046,8,1.0,kg,5.9,NZD,47.2,NZD
+NON002,2026-07-27,Gilmours,Pizza Dough Base,ING035,9,5.0,kg,4.2,NZD,189.0,NZD
+NON002,2026-07-27,Moore Wilson's,Garlic Butter,ING048,2,2.0,kg,11.4,NZD,45.6,NZD
+NON002,2026-07-27,Moore Wilson's,Mozzarella Cheese,ING036,23,2.0,kg,13.8,NZD,634.8,NZD
+NON002,2026-07-27,Moore Wilson's,Panko Breadcrumb,ING028,1,5.0,kg,6.8,NZD,34.0,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Ciabatta Bread,ING047,17064,1.0,ea,3.2,NZD,54604.8,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Espresso Coffee,ING050,2,1.0,kg,28.0,NZD,56.0,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Fettuccine Pasta,ING041,3,5.0,kg,4.2,NZD,63.0,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Lasagna Sheet,ING045,3,3.0,kg,6.4,NZD,57.6,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Mascarpone Cheese,ING049,8,1.0,kg,16.8,NZD,134.4,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Penne Pasta,ING044,2,5.0,kg,3.85,NZD,38.5,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Spaghetti Pasta,ING039,4,5.0,kg,3.9,NZD,78.0,NZD
+NON002,2026-07-27,Bella Italia Imports NZ (Fictional),Tomato Sauce (Italian),ING037,9,4.0,L,9.6,NZD,345.6,NZD
+NON002,2026-07-27,Bidfood NZ,Bacon Lardons,ING042,7,1.0,kg,16.9,NZD,118.3,NZD
+NON002,2026-07-27,Bidfood NZ,Beef Mince,ING040,33,1.0,kg,15.6,NZD,514.8,NZD
+NON002,2026-07-27,Bidfood NZ,Chicken Breast,ING005,16,1.0,kg,11.2,NZD,179.2,NZD
+NON002,2026-07-27,Bidfood NZ,Pepperoni Slices,ING038,8,1.0,kg,18.4,NZD,147.2,NZD

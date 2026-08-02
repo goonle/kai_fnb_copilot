@@ -1,0 +1,25 @@
+MOCK INVOICE  Trents Wholesale
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-TRE-260720-21
+Issue date 21 Jul 2026
+Due date 04 Aug 2026
+PO number PO-DEMO-4121
+
+Description                                     Qty   Unit(NZD)    Line total
+Canola Oil (20L/pack)                             1       75.00         75.00
+
+Subtotal                                                            75.00
+Freight                                                              0.00
+GST 15%                                                             11.25
+TOTAL NZD                                                           86.25
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-TRE-260720-21
+SYNTHETIC MOCK - NOT A REAL INVOICE

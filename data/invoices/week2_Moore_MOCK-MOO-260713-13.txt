@@ -1,0 +1,27 @@
+MOCK INVOICE  Moore Wilson's
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-MOO-260713-13
+Issue date 13 Jul 2026
+Due date 27 Jul 2026
+PO number PO-DEMO-4113
+
+Description                                     Qty   Unit(NZD)    Line total
+Panko Breadcrumb (5kg/pack)                       2       34.00         68.00
+Potato Starch (5kg/pack)                          1       27.00         27.00
+Tempura Batter Mix (5kg/pack)                     1       36.00         36.00
+
+Subtotal                                                           131.00
+Freight                                                             18.00
+GST 15%                                                             22.35
+TOTAL NZD                                                          171.35
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-MOO-260713-13
+SYNTHETIC MOCK - NOT A REAL INVOICE

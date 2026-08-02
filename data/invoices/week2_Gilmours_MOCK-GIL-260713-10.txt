@@ -1,0 +1,30 @@
+MOCK INVOICE  Gilmours
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-GIL-260713-10
+Issue date 15 Jul 2026
+Due date 29 Jul 2026
+PO number PO-DEMO-4110
+
+Description                                     Qty   Unit(NZD)    Line total
+Avocado (1ea/pack)                             3989        1.90       7579.10
+Cherry Tomato (1kg/pack)                          4        6.40         25.60
+Cucumber (1kg/pack)                               4        3.80         15.20
+Firm Tofu (1kg/pack)                              8        6.20         49.60
+Mixed Salad Greens (1kg/pack)                    13        8.90        115.70
+Spring Onion (1kg/pack)                           3        5.60         16.80
+
+Subtotal                                                          7802.00
+Freight                                                             24.00
+GST 15%                                                           1173.90
+TOTAL NZD                                                         8999.90
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-GIL-260713-10
+SYNTHETIC MOCK - NOT A REAL INVOICE

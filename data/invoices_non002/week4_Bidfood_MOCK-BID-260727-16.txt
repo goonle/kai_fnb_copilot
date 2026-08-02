@@ -1,0 +1,28 @@
+MOCK INVOICE  Bidfood NZ
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Nonna's Trattoria Ltd (Fictional)
+45 Demo Terrace, Auckland
+Customer account: DEMO-ACCT-002
+Invoice no. MOCK-BID-260727-16
+Issue date 28 Jul 2026
+Due date 11 Aug 2026
+PO number PO-DEMO-4316
+
+Description                                     Qty   Unit(NZD)    Line total
+Bacon Lardons (1kg/pack)                          7       16.90        118.30
+Beef Mince (1kg/pack)                            33       15.60        514.80
+Chicken Breast (1kg/pack)                        16       11.20        179.20
+Pepperoni Slices (1kg/pack)                       8       18.40        147.20
+
+Subtotal                                                           959.50
+Freight                                                             12.50
+GST 15%                                                            145.80
+TOTAL NZD                                                         1117.80
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-BID-260727-16
+SYNTHETIC MOCK - NOT A REAL INVOICE

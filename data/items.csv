@@ -1,0 +1,44 @@
+business_id,item_id,item_name,item_type,category,price_number,price_unit,avg_daily_qty
+HSC001,HSC001-I001,Salmon Sushi (8pc),food,Sushi,16.0,NZD,14
+HSC001,HSC001-I002,Salmon Salad Bowl,food,Bowl,15.5,NZD,12
+HSC001,HSC001-I003,Salmon Don (Salmon on Rice),food,Don,17.0,NZD,16
+HSC001,HSC001-I004,Salmon Teriyaki Don,food,Don,17.5,NZD,10
+HSC001,HSC001-I005,Spicy Tuna Roll (8pc),food,Sushi,15.0,NZD,10
+HSC001,HSC001-I006,Tuna Poke Bowl,food,Bowl,17.0,NZD,11
+HSC001,HSC001-I007,California Roll (8pc),food,Sushi,13.0,NZD,9
+HSC001,HSC001-I008,Chicken Katsu Don,food,Don,16.0,NZD,18
+HSC001,HSC001-I009,Chicken Teriyaki Don,food,Don,16.0,NZD,15
+HSC001,HSC001-I010,Chicken Karaage (5pc),food,Fried,14.0,NZD,13
+HSC001,HSC001-I011,Chicken Katsu Curry,food,Curry,16.5,NZD,12
+HSC001,HSC001-I012,Chicken Udon Soup,food,Noodle,15.0,NZD,9
+HSC001,HSC001-I013,Beef Yakiniku Don,food,Don,18.5,NZD,8
+HSC001,HSC001-I014,Prawn Tempura Don,food,Don,18.0,NZD,7
+HSC001,HSC001-I015,Vegetable Tempura Udon,food,Noodle,15.0,NZD,6
+HSC001,HSC001-I016,Tofu Teriyaki Don (Veg),food,Don,14.0,NZD,5
+HSC001,HSC001-I017,Edamame,food,Side,6.0,NZD,10
+HSC001,HSC001-I018,Miso Soup,food,Side,5.0,NZD,14
+HSC001,HSC001-I019,Seaweed Salad,food,Side,7.0,NZD,8
+HSC001,HSC001-I020,Gyoza (6pc),food,Side,9.0,NZD,11
+NON002,NON002-I001,Margherita Pizza,food,Pizza,19.0,NZD,12
+NON002,NON002-I002,Pepperoni Pizza,food,Pizza,21.0,NZD,14
+NON002,NON002-I003,Spaghetti Bolognese,food,Pasta,18.5,NZD,15
+NON002,NON002-I004,Fettuccine Carbonara,food,Pasta,19.5,NZD,11
+NON002,NON002-I005,Penne Arrabbiata,food,Pasta,17.0,NZD,8
+NON002,NON002-I006,Chicken Parmigiana,food,Main,24.0,NZD,9
+NON002,NON002-I007,Beef Lasagna,food,Main,22.0,NZD,10
+NON002,NON002-I008,Caprese Salad,food,Salad,14.0,NZD,7
+NON002,NON002-I009,Garlic Bread,food,Side,8.0,NZD,13
+NON002,NON002-I010,Tiramisu,food,Dessert,10.0,NZD,9
+HSC001,HSC001-I021,Green Tea (Hot),drink,Drink,3.5,NZD,16
+HSC001,HSC001-I022,Iced Green Tea,drink,Drink,5.0,NZD,14
+HSC001,HSC001-I023,Ramune Soda,drink,Drink,5.0,NZD,10
+HSC001,HSC001-I024,Coke / Sprite Can,drink,Drink,4.0,NZD,18
+HSC001,HSC001-I025,Bottled Water,drink,Drink,3.0,NZD,12
+HSC001,HSC001-I026,Yuzu Lemonade,drink,Drink,6.0,NZD,9
+HSC001,HSC001-I027,Iced Coffee,drink,Drink,5.5,NZD,8
+HSC001,HSC001-I028,Matcha Latte,drink,Drink,6.0,NZD,7
+NON002,NON002-I011,House Red Wine (glass),drink,Drink,11.0,NZD,10
+NON002,NON002-I012,House White Wine (glass),drink,Drink,11.0,NZD,8
+NON002,NON002-I013,Italian Soda,drink,Drink,5.5,NZD,9
+NON002,NON002-I014,Espresso,drink,Drink,4.5,NZD,14
+NON002,NON002-I015,Sparkling Water,drink,Drink,4.0,NZD,10

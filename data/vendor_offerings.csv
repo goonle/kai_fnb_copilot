@@ -1,0 +1,56 @@
+vendor_name,ingredient_id,purchase_unit,pack_size,unit_price_number,unit_price_unit
+South Pacific Seafoods NZ,ING001,kg,1,34.5,NZD
+South Pacific Seafoods NZ,ING002,kg,1,28.9,NZD
+Service Foods,ING003,kg,1,26.8,NZD
+Service Foods,ING004,kg,1,9.4,NZD
+Bidfood NZ,ING005,kg,1,11.2,NZD
+Bidfood NZ,ING006,kg,1,9.8,NZD
+Bidfood NZ,ING007,kg,1,24.6,NZD
+Gilmours,ING008,kg,1,8.9,NZD
+Gilmours,ING009,kg,1,6.4,NZD
+Gilmours,ING010,kg,1,3.8,NZD
+Gilmours,ING011,ea,1,1.9,NZD
+Gilmours,ING012,kg,1,5.6,NZD
+Gilmours,ING013,kg,1,6.2,NZD
+Nishi Asian Foods NZ (Fictional),ING014,kg,10,42.0,NZD
+Nishi Asian Foods NZ (Fictional),ING015,pkt(100sheets),1,24.5,NZD
+Nishi Asian Foods NZ (Fictional),ING016,L,5,18.9,NZD
+Nishi Asian Foods NZ (Fictional),ING017,L,4,22.4,NZD
+Nishi Asian Foods NZ (Fictional),ING018,L,4,19.8,NZD
+Nishi Asian Foods NZ (Fictional),ING019,L,4,16.5,NZD
+Nishi Asian Foods NZ (Fictional),ING020,L,4,17.9,NZD
+Nishi Asian Foods NZ (Fictional),ING021,L,4,20.6,NZD
+Nishi Asian Foods NZ (Fictional),ING022,kg,5,15.8,NZD
+Nishi Asian Foods NZ (Fictional),ING023,L,10,9.6,NZD
+Nishi Asian Foods NZ (Fictional),ING024,kg,5,14.2,NZD
+Nishi Asian Foods NZ (Fictional),ING025,kg,1,12.9,NZD
+Nishi Asian Foods NZ (Fictional),ING026,kg,5,8.4,NZD
+Nishi Asian Foods NZ (Fictional),ING027,kg,2,22.0,NZD
+Moore Wilson's,ING028,kg,5,6.8,NZD
+Moore Wilson's,ING029,kg,5,5.4,NZD
+Moore Wilson's,ING030,kg,5,7.2,NZD
+Trents Wholesale,ING031,L,20,3.75,NZD
+Service Foods,ING032,kg,2,8.45,NZD
+Service Foods,ING033,kg,2,9.9,NZD
+Service Foods,ING034,kg,2,13.6,NZD
+Gilmours,ING035,kg,5,4.2,NZD
+Moore Wilson's,ING036,kg,2,13.8,NZD
+Bella Italia Imports NZ (Fictional),ING037,L,4,9.6,NZD
+Bidfood NZ,ING038,kg,1,18.4,NZD
+Bella Italia Imports NZ (Fictional),ING039,kg,5,3.9,NZD
+Bidfood NZ,ING040,kg,1,15.6,NZD
+Bella Italia Imports NZ (Fictional),ING041,kg,5,4.2,NZD
+Bidfood NZ,ING042,kg,1,16.9,NZD
+Gilmours,ING043,L,2,6.8,NZD
+Bella Italia Imports NZ (Fictional),ING044,kg,5,3.85,NZD
+Bella Italia Imports NZ (Fictional),ING045,kg,3,6.4,NZD
+Gilmours,ING046,kg,1,5.9,NZD
+Bella Italia Imports NZ (Fictional),ING047,ea,1,3.2,NZD
+Moore Wilson's,ING048,kg,2,11.4,NZD
+Bella Italia Imports NZ (Fictional),ING049,kg,1,16.8,NZD
+Bella Italia Imports NZ (Fictional),ING050,kg,1,28.0,NZD
+Bidfood NZ,ING001,kg,1,33.8,NZD
+Ocean Fresh Direct NZ (Fictional),ING001,kg,5,31.9,NZD
+Trents Wholesale,ING005,kg,1,10.6,NZD
+Service Foods,ING005,kg,5,10.95,NZD
+Bidfood NZ,ING036,kg,2,14.2,NZD

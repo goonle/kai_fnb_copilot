@@ -1,0 +1,38 @@
+MOCK INVOICE  Nishi Asian Foods NZ (Fictional)
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Harbour Street Cafe Ltd (Fictional)
+10 Sample Lane, Auckland
+Customer account: DEMO-ACCT-001
+Invoice no. MOCK-NIS-260713-09
+Issue date 14 Jul 2026
+Due date 28 Jul 2026
+PO number PO-DEMO-4109
+
+Description                                     Qty   Unit(NZD)    Line total
+Curry Roux (5kg/pack)                             2       79.00        158.00
+Dashi Stock (10L/pack)                            7       96.00        672.00
+Katsu Sauce (4L/pack)                             1       71.60         71.60
+Miso Paste (5kg/pack)                             1       71.00         71.00
+Nori Sheet (1pkt(100sheets)/pack)               241       24.50       5904.50
+Seaweed Salad Mix (2kg/pack)                      3       44.00        132.00
+Sesame Dressing (4L/pack)                         1       79.20         79.20
+Sesame Seed (1kg/pack)                            1       12.90         12.90
+Soy Sauce (5L/pack)                               1       94.50         94.50
+Spicy Mayo (4L/pack)                              1       66.00         66.00
+Sushi Rice (10kg/pack)                           26      420.00      10920.00
+Teriyaki Sauce (4L/pack)                          2       89.60        179.20
+Udon Noodle (5kg/pack)                            6       42.00        252.00
+Yakiniku Sauce (4L/pack)                          1       82.40         82.40
+
+Subtotal                                                         18695.30
+Freight                                                             18.00
+GST 15%                                                           2807.00
+TOTAL NZD                                                        21520.30
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-NIS-260713-09
+SYNTHETIC MOCK - NOT A REAL INVOICE

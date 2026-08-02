@@ -1,0 +1,7 @@
+streamlit>=1.38
+pandas>=2.0
+snowflake-connector-python>=3.10
+anthropic>=0.34
+requests>=2.31
+PyMuPDF>=1.24
+altair>=5.0

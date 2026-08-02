@@ -1,0 +1,27 @@
+MOCK INVOICE  Moore Wilson's
+SYNTHETIC TRAINING DOCUMENT - NOT ISSUED BY THE NAMED VENDOR
+ALL PRICES AND TRANSACTION DATA ARE FICTIONAL
+
+BILL TO
+Nonna's Trattoria Ltd (Fictional)
+45 Demo Terrace, Auckland
+Customer account: DEMO-ACCT-002
+Invoice no. MOCK-MOO-260727-14
+Issue date 28 Jul 2026
+Due date 11 Aug 2026
+PO number PO-DEMO-4314
+
+Description                                     Qty   Unit(NZD)    Line total
+Garlic Butter (2kg/pack)                          2       22.80         45.60
+Mozzarella Cheese (2kg/pack)                     23       27.60        634.80
+Panko Breadcrumb (5kg/pack)                       1       34.00         34.00
+
+Subtotal                                                           714.40
+Freight                                                              0.00
+GST 15%                                                            107.16
+TOTAL NZD                                                          821.56
+
+Mock payment terms
+Payment due 14 days from issue date. Do not pay. No real bank account or GST number is provided.
+Synthetic GST reference: MOCK-GST-000000 | Payment reference: MOCK-MOO-260727-14
+SYNTHETIC MOCK - NOT A REAL INVOICE

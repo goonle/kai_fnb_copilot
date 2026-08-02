@@ -1,0 +1,51 @@
+ingredient_id,ingredient_name,category,standard_unit
+ING001,Fresh Salmon Fillet,Fresh Seafood,kg
+ING002,Prawn (Peeled),Fresh Seafood,kg
+ING003,Frozen Tuna Loin,Frozen Protein,kg
+ING004,Crab Stick,Frozen Protein,kg
+ING005,Chicken Breast,Fresh Meat,kg
+ING006,Chicken Thigh,Fresh Meat,kg
+ING007,Beef Short Rib Sliced,Fresh Meat,kg
+ING008,Mixed Salad Greens,Fresh Produce,kg
+ING009,Cherry Tomato,Fresh Produce,kg
+ING010,Cucumber,Fresh Produce,kg
+ING011,Avocado,Fresh Produce,ea
+ING012,Spring Onion,Fresh Produce,kg
+ING013,Firm Tofu,Fresh Produce,kg
+ING014,Sushi Rice,Asian Specialty Imports,kg
+ING015,Nori Sheet,Asian Specialty Imports,pkt(100sheets)
+ING016,Soy Sauce,Asian Specialty Imports,L
+ING017,Teriyaki Sauce,Asian Specialty Imports,L
+ING018,Sesame Dressing,Asian Specialty Imports,L
+ING019,Spicy Mayo,Asian Specialty Imports,L
+ING020,Katsu Sauce,Asian Specialty Imports,L
+ING021,Yakiniku Sauce,Asian Specialty Imports,L
+ING022,Curry Roux,Asian Specialty Imports,kg
+ING023,Dashi Stock,Asian Specialty Imports,L
+ING024,Miso Paste,Asian Specialty Imports,kg
+ING025,Sesame Seed,Asian Specialty Imports,kg
+ING026,Udon Noodle,Asian Specialty Imports,kg
+ING027,Seaweed Salad Mix,Asian Specialty Imports,kg
+ING028,Panko Breadcrumb,Dry Goods & Pantry,kg
+ING029,Potato Starch,Dry Goods & Pantry,kg
+ING030,Tempura Batter Mix,Dry Goods & Pantry,kg
+ING031,Canola Oil,Dry Goods & Pantry,L
+ING032,Mixed Vegetables (IQF),Frozen Goods,kg
+ING033,Edamame (Frozen),Frozen Goods,kg
+ING034,Frozen Gyoza,Frozen Goods,kg
+ING035,Pizza Dough Base,Fresh Produce,kg
+ING036,Mozzarella Cheese,Dry Goods & Pantry,kg
+ING037,Tomato Sauce (Italian),Italian Specialty Imports,L
+ING038,Pepperoni Slices,Fresh Meat,kg
+ING039,Spaghetti Pasta,Italian Specialty Imports,kg
+ING040,Beef Mince,Fresh Meat,kg
+ING041,Fettuccine Pasta,Italian Specialty Imports,kg
+ING042,Bacon Lardons,Fresh Meat,kg
+ING043,Fresh Cream (Italian),Fresh Produce,L
+ING044,Penne Pasta,Italian Specialty Imports,kg
+ING045,Lasagna Sheet,Italian Specialty Imports,kg
+ING046,Fresh Tomato (Italian),Fresh Produce,kg
+ING047,Ciabatta Bread,Italian Specialty Imports,ea
+ING048,Garlic Butter,Dry Goods & Pantry,kg
+ING049,Mascarpone Cheese,Italian Specialty Imports,kg
+ING050,Espresso Coffee,Italian Specialty Imports,kg
