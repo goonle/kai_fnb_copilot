@@ -96,3 +96,70 @@ SQL query that was used to generate the answer.
 8. "How much did we purchase from Nishi Asian Foods NZ this month in
    total?"
 ```
+
+## Step 6 — Create SUPPLIER_OPTIMIZER and MENU_MARGIN views
+
+Prompt to CoCo:
+
+```
+In the ANALYTIC schema, create two additional views:
+
+1. SUPPLIER_OPTIMIZER: For each ingredient that the business purchases,
+   show the current vendor, current unit price, the cheapest alternative
+   vendor + price, and the potential savings per unit. Join RAW.PURCHASE_LEDGER
+   (for current vendor usage) with RAW.VENDOR_OFFERINGS (for all vendor prices)
+   and RAW.INGREDIENTS (for ingredient name/category). Include a rank column
+   so the user can sort by biggest savings opportunity.
+
+2. MENU_MARGIN: For each menu item, estimate the gross margin. Join
+   RAW.ITEMS (sell price) with RAW.MENU_INGREDIENT_TAGS (ingredient list)
+   and RAW.VENDOR_OFFERINGS (cheapest available ingredient cost). Factor in
+   RAW.INGREDIENTS.WASTE_PCT — the effective ingredient cost should be
+   unit_price * (1 + waste_pct/100) to account for spoilage/human error.
+   Calculate: estimated_cogs = SUM of (cheapest unit price * (1 + waste_pct/100))
+   across all tagged ingredients, then gross_margin_pct =
+   (sell_price - estimated_cogs) / sell_price * 100.
+   
+   Note: Since we don't have precise gram-level recipes, this is a rough
+   estimate using the minimum vendor price for each tagged ingredient.
+   It serves as a directional indicator, not exact accounting.
+```
+
+## Step 7 — Update the Semantic View with new views and waste %
+
+Prompt to CoCo:
+
+```
+Update the existing semantic view to include:
+- ANALYTIC.SUPPLIER_OPTIMIZER with descriptions:
+  - current_unit_price: "Price currently being paid to the vendor"
+  - cheapest_price: "Lowest available price from any vendor"
+  - savings_per_unit: "Potential savings if switched to cheapest vendor"
+  - Add synonyms: "savings", "cheaper", "alternative", "switch vendor"
+
+- ANALYTIC.MENU_MARGIN with descriptions:
+  - estimated_cogs: "Estimated cost of goods sold per item, including waste factor"
+  - gross_margin_pct: "Estimated gross profit margin percentage"
+  - waste_adjusted_cost: "Ingredient cost after accounting for waste/spoilage"
+  - Add synonyms: "margin", "profit", "COGS", "cost of goods", "waste"
+
+- Add WASTE_PCT to the INGREDIENTS entity with description:
+  "Percentage of ingredient lost to spoilage or human error in the kitchen
+  (e.g. 8% for fresh seafood). Used to inflate effective ingredient cost
+  when calculating menu margins."
+  Synonyms: "waste", "spoilage", "loss rate"
+```
+
+## Step 8 — Update the Cortex Agent
+
+Prompt to CoCo:
+
+```
+Update FOOD_INTEL_AGENT to reference the latest semantic view that includes
+SUPPLIER_OPTIMIZER and MENU_MARGIN. The agent should now be able to answer
+questions like:
+- "Which menu items have gross margins below 50%?"
+- "What are my biggest cost-saving opportunities across all ingredients?"
+- "If I switch salmon vendors to the cheapest option, how much would I save monthly?"
+- "Show me items where waste-adjusted COGS exceeds 40% of the selling price"
+```

@@ -30,7 +30,8 @@ CREATE OR REPLACE TABLE RAW.INGREDIENTS (
     INGREDIENT_ID   VARCHAR(10)     NOT NULL PRIMARY KEY,
     INGREDIENT_NAME VARCHAR(200)    NOT NULL,
     CATEGORY        VARCHAR(100),      -- 예: Fresh Seafood, Fresh Meat, Asian Specialty Imports
-    STANDARD_UNIT   VARCHAR(20)        -- kg, L, ea 등 (수량 단위, 통화 아님)
+    STANDARD_UNIT   VARCHAR(20),       -- kg, L, ea 등 (수량 단위, 통화 아님)
+    WASTE_PCT       NUMBER(5,2)     DEFAULT 5.00   -- spoilage/waste %, accounts for human error in kitchen
 );
 
 -- ------------------------------------------------------------
@@ -109,4 +110,24 @@ CREATE OR REPLACE TABLE RAW.DAILY_SALES (
     UNIT_PRICE_UNIT          VARCHAR(3)    DEFAULT 'NZD', -- 통화 단위
     REVENUE_NUMBER           NUMBER(12,2)  NOT NULL,       -- 매출 숫자
     REVENUE_UNIT             VARCHAR(3)    DEFAULT 'NZD'   -- 통화 단위
+);
+
+-- ------------------------------------------------------------
+-- 8. price_alerts : 가격 변동 알림 기록
+-- ------------------------------------------------------------
+CREATE OR REPLACE TABLE RAW.PRICE_ALERTS (
+    ALERT_ID            VARCHAR(20)     NOT NULL PRIMARY KEY,
+    BUSINESS_ID         VARCHAR(20)     NOT NULL REFERENCES RAW.BUSINESSES(BUSINESS_ID),
+    INGREDIENT_ID       VARCHAR(10)     REFERENCES RAW.INGREDIENTS(INGREDIENT_ID),
+    INGREDIENT_NAME     VARCHAR(200)    NOT NULL,
+    VENDOR_NAME         VARCHAR(200)    NOT NULL,
+    OLD_PRICE_NUMBER    NUMBER(10,2),
+    NEW_PRICE_NUMBER    NUMBER(10,2)    NOT NULL,
+    PRICE_UNIT          VARCHAR(3)      DEFAULT 'NZD',
+    CHANGE_PCT          NUMBER(5,2),
+    ALTERNATIVE_VENDOR  VARCHAR(200),
+    ALTERNATIVE_PRICE   NUMBER(10,2),
+    EST_MONTHLY_IMPACT  NUMBER(12,2),
+    STATUS              VARCHAR(20)     DEFAULT 'pending',
+    CREATED_AT          TIMESTAMP_NTZ   DEFAULT CURRENT_TIMESTAMP()
 );

@@ -22,6 +22,8 @@ import fitz
 from lib.snowflake.conn import get_snowflake_connection_by_role, get_cortex_agent_url, sf_account, sf_user
 from lib.invoice import save_purchase_invoice
 from lib.sales import save_daily_sales
+from lib.alerts import detect_price_changes
+from lib.actions import record_alert, update_menu_price, suggest_price_adjustment, update_waste_pct
 
 
 
@@ -326,6 +328,84 @@ with tab_purchase:
                 st.success(f"Vendor: **{data.get('vendor', '?')}** / Date: **{data.get('issue_date', '?')}**")
                 df = pd.DataFrame(data.get("items", []))
                 edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True, key="invoice upload")
+
+                # --- Proactive Price Alert Panel ---
+                if sf_account:  # only if connected to Snowflake
+                    try:
+                        alert_conn = get_snowflake_connection_by_role(current_role)
+                        alert_cur = alert_conn.cursor()
+                        alerts = detect_price_changes(
+                            alert_cur, business_id, data.get("vendor", ""),
+                            edited_df.to_dict("records")
+                        )
+                        if alerts:
+                            st.divider()
+                            st.warning(f"⚠️ **{len(alerts)} price increase(s) detected!**")
+                            for idx, alert in enumerate(alerts):
+                                pct_str = f"{alert['change_pct']*100:.1f}%"
+                                with st.expander(
+                                    f"🔺 {alert['ingredient']}: +{pct_str} "
+                                    f"(${alert['old_price']:.2f} → ${alert['new_price']:.2f}/{alert['unit']})"
+                                ):
+                                    col_a, col_b = st.columns(2)
+                                    with col_a:
+                                        st.metric("Estimated monthly impact",
+                                                  f"+${alert['est_monthly_impact']:.2f}")
+                                    with col_b:
+                                        if alert["alternative_vendor"]:
+                                            st.info(
+                                                f"💡 **{alert['alternative_vendor']}** offers this at "
+                                                f"${alert['alternative_price']:.2f}/{alert['unit']}"
+                                            )
+                                        else:
+                                            st.caption("No alternative vendor found")
+
+                                    # Action buttons
+                                    btn_col1, btn_col2, btn_col3 = st.columns(3)
+                                    with btn_col1:
+                                        if st.button("📝 Record alert", key=f"record_alert_{idx}"):
+                                            try:
+                                                alert_id = record_alert(alert_cur, business_id, alert)
+                                                alert_conn.commit()
+                                                st.success(f"Alert {alert_id} recorded")
+                                            except Exception as e:
+                                                st.error(f"Failed: {e}")
+                                    with btn_col2:
+                                        if alert.get("ingredient_id"):
+                                            suggestions = suggest_price_adjustment(
+                                                alert_cur, business_id,
+                                                alert["ingredient_id"], alert["change_pct"]
+                                            )
+                                            if suggestions and st.button(
+                                                "💰 Update menu prices", key=f"update_price_{idx}"
+                                            ):
+                                                try:
+                                                    for s in suggestions:
+                                                        update_menu_price(alert_cur, s["item_id"], s["suggested_price"])
+                                                    alert_conn.commit()
+                                                    st.success(
+                                                        f"Updated {len(suggestions)} menu item(s): "
+                                                        + ", ".join(f"{s['item_name']} → ${s['suggested_price']:.2f}" for s in suggestions)
+                                                    )
+                                                except Exception as e:
+                                                    st.error(f"Failed: {e}")
+                                    with btn_col3:
+                                        if alert.get("ingredient_id"):
+                                            new_waste = st.number_input(
+                                                "Waste %", min_value=0.0, max_value=50.0,
+                                                value=5.0, step=1.0, key=f"waste_{idx}"
+                                            )
+                                            if st.button("Set waste %", key=f"set_waste_{idx}"):
+                                                try:
+                                                    update_waste_pct(alert_cur, alert["ingredient_id"], new_waste)
+                                                    alert_conn.commit()
+                                                    st.success(f"Waste % set to {new_waste}%")
+                                                except Exception as e:
+                                                    st.error(f"Failed: {e}")
+                            st.divider()
+                    except Exception as e:
+                        pass  # silently skip alerts if DB not available
+
                 if st.button("✅ Save this data", key="save_invoice"):
                     try:
                         conn = get_snowflake_connection_by_role(current_role)
@@ -394,16 +474,21 @@ with tab_chat:
     st.subheader("Ask anything")
 
     suggested_questions = {
-        "Purchasing / inventory": [
-            "Compare the trend of salmon purchase volume against the trend of salmon-related menu item sales",
+        "Supplier optimization": [
             "Which vendor sells Fresh Salmon Fillet at the lowest price?",
+            "What are my biggest cost-saving opportunities if I switch to cheaper vendors?",
+        ],
+        "Menu margins & waste": [
+            "Which menu items have gross margins below 50%?",
+            "Show items where waste-adjusted COGS exceeds 40% of selling price",
         ],
         "Sales insights": [
-            "What are the top 5 best-selling menu items?",
+            "What are the top 5 best-selling menu items this month?",
             "Which items were sold at a discount this week, and what was the total discount loss?",
         ],
-        "Tax prep": [
-            "Summarize this quarter's spending by category",
+        "Purchase trends": [
+            "Compare the trend of salmon purchase volume against salmon-related menu sales",
+            "Summarize this month's spending by ingredient category",
         ],
     }
 
@@ -564,3 +649,31 @@ with tab_dashboard:
         st.altair_chart(bar_chart, use_container_width=True)
     else:
         st.info("Connect to Snowflake to see real data in this chart.")
+
+    st.divider()
+    st.write("**Recent Price Alerts**")
+    alerts_df = run_sql(
+        f"""
+        SELECT ALERT_ID, INGREDIENT_NAME, VENDOR_NAME,
+               OLD_PRICE_NUMBER, NEW_PRICE_NUMBER, CHANGE_PCT,
+               ALTERNATIVE_VENDOR, ALTERNATIVE_PRICE,
+               EST_MONTHLY_IMPACT, STATUS, CREATED_AT
+        FROM RAW.PRICE_ALERTS
+        WHERE BUSINESS_ID = '{business_id}'
+        ORDER BY CREATED_AT DESC
+        LIMIT 20
+        """
+    )
+    if alerts_df is not None and not alerts_df.empty:
+        # Color-code status
+        def style_status(val):
+            colors = {"pending": "orange", "acknowledged": "blue", "acted": "green"}
+            return f"color: {colors.get(val, 'black')}"
+
+        st.dataframe(
+            alerts_df.style.applymap(style_status, subset=["STATUS"]),
+            use_container_width=True,
+            hide_index=True,
+        )
+    else:
+        st.info("No price alerts recorded yet. Upload an invoice to trigger price-change detection.")
