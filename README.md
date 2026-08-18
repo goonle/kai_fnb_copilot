@@ -16,7 +16,7 @@ Agent generated through conversational prompts to **Snowflake CoCo CLI**.
 ## 🎥 Demo
 
 - Demo video: `<link to be added>`
-- Live app (if deployed): `<link to be added>`
+- Live app (if deployed): `https://kaifnbcopilot.streamlit.app/`
 
 ---
 
@@ -52,16 +52,16 @@ uploading a photo and typing a question.
 ## Architecture
 
 ```
-┌─────────────────┐     ┌──────────────────┐     ┌────────────────────┐
-│  Streamlit App   │────▶│  Snowflake        │────▶│  Cortex Agent       │
-│  (upload, chat,  │     │  RAW + ANALYTIC   │     │  (FOOD_INTEL_AGENT) │
-│   dashboard)     │◀────│  schemas          │◀────│  + Semantic View    │
-└─────────────────┘     └──────────────────┘     └────────────────────┘
-        │                        │
-        ▼                        ▼
- Vision API extracts      Secure views enforce
- structured data from     per-business row-level
- receipt/report photos    isolation (Role-based)
++--------------------+   +--------------------+   +--------------------+
+|   Streamlit App    |-->|     Snowflake      |-->|    Cortex Agent    |
+|   (upload, chat,   |   |   RAW + ANALYTIC   |   | (FOOD_INTEL_AGENT) |
+|     dashboard)     |<--|      schemas       |<--|  + Semantic View   |
++--------------------+   +--------------------+   +--------------------+
+           |                        |
+           v                        v
+        Vision API extracts      Secure views enforce
+        structured data from     per-business row-level
+        receipt/report photos    isolation (Role-based)
 ```
 
 - **Data model**: 7 core tables (`businesses`, `ingredients`,
