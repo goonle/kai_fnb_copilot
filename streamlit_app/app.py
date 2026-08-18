@@ -318,6 +318,12 @@ current_role = role_options[selected_business]
 business_id = "HSC001" if "HSC" in current_role else "NON002"
 st.sidebar.info(f"Current Role: `{current_role}`\n\nThis account can only see its own business's data.")
 
+# Switching businesses mid-conversation would otherwise leak the previous
+# business's chat history/context into the new one, so reset it here.
+if st.session_state.get("chat_business_id") != business_id:
+    st.session_state["chat_history"] = []
+    st.session_state["chat_business_id"] = business_id
+
 
 
 
