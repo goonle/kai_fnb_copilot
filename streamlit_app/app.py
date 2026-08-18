@@ -65,6 +65,27 @@ def insert_rows(table, rows: list[dict]):
 # ---------------------------------------------------------------------------
 # Cortex Agent call helper (REST API)
 # ---------------------------------------------------------------------------
+QUOTA_SHORTAGE_MESSAGE = (
+    "⏳ **AI token/credit limit reached.** The Cortex Agent has hit its usage "
+    "limit for now (rate limit, trial credits, or budget exhausted) — this "
+    "isn't a bug, just a temporary quota. Please try again later."
+)
+
+
+def _is_quota_shortage(status_code: int, text: str) -> bool:
+    """Heuristic: does this failure look like a rate-limit/credit/budget shortage
+    rather than a genuine bug? HTTP 429 always counts; otherwise look for
+    common quota-related keywords in the error text."""
+    if status_code in (429, 402):
+        return True
+    lowered = (text or "").lower()
+    keywords = (
+        "rate limit", "rate-limit", "too many requests", "quota", "budget",
+        "credit", "exceeded", "throttle", "insufficient funds",
+    )
+    return any(kw in lowered for kw in keywords)
+
+
 def ask_cortex_agent(question: str):
     """
     Calls the Cortex Agent REST API.
@@ -101,6 +122,9 @@ def ask_cortex_agent(question: str):
         # Show raw response details before attempting to parse, so failures
         # are diagnosable instead of just "Expecting value: line 1 column 1"
         if resp.status_code != 200:
+            if _is_quota_shortage(resp.status_code, resp.text):
+                return {"answer": QUOTA_SHORTAGE_MESSAGE, "sql": None, "chart_data": None,
+                        "quota_exceeded": True}
             return {
                 "answer": f"Agent call failed with HTTP {resp.status_code}.\n\n"
                           f"Response body (first 1000 chars):\n{resp.text[:1000]}",
@@ -163,6 +187,9 @@ def ask_cortex_agent(question: str):
                         sql_used = tool_input["query"]
 
         if error_message:
+            if _is_quota_shortage(resp.status_code, error_message):
+                return {"answer": QUOTA_SHORTAGE_MESSAGE, "sql": None, "chart_data": None,
+                        "quota_exceeded": True}
             return {
                 "answer": f"Agent returned an error: {error_message}",
                 "sql": None, "chart_data": None,
@@ -172,6 +199,9 @@ def ask_cortex_agent(question: str):
                                           f"Raw response (first 1000 chars):\n{resp.text[:1000]}",
                 "sql": sql_used, "chart_data": None}
     except Exception as e:
+        if _is_quota_shortage(0, str(e)):
+            return {"answer": QUOTA_SHORTAGE_MESSAGE, "sql": None, "chart_data": None,
+                    "quota_exceeded": True}
         return {"answer": f"Agent call failed: {e}\n\n(You may need to adjust the REST API endpoint/auth "
                           f"settings to match your account environment.)",
                 "sql": None, "chart_data": None}
@@ -522,7 +552,10 @@ with tab_chat:
 
     for msg in st.session_state["chat_history"]:
         with st.chat_message(msg["role"]):
-            st.write(msg["content"])
+            if msg.get("quota_exceeded"):
+                st.warning(msg["content"])
+            else:
+                st.write(msg["content"])
             if msg.get("sql"):
                 with st.expander("View SQL executed"):
                     st.code(msg["sql"], language="sql")
@@ -538,13 +571,17 @@ with tab_chat:
         with st.chat_message("assistant"):
             with st.spinner("Generating an answer..."):
                 result = ask_cortex_agent(question_to_ask)
-            st.write(result["answer"])
+            if result.get("quota_exceeded"):
+                st.warning(result["answer"])
+            else:
+                st.write(result["answer"])
             if result.get("sql"):
                 with st.expander("View SQL executed"):
                     st.code(result["sql"], language="sql")
-        st.session_state["chat_history"].append(
-            {"role": "assistant", "content": result["answer"], "sql": result.get("sql")}
-        )
+        st.session_state["chat_history"].append({
+            "role": "assistant", "content": result["answer"], "sql": result.get("sql"),
+            "quota_exceeded": result.get("quota_exceeded", False),
+        })
 
 # --- Tab 4: Dashboard ---
 with tab_dashboard:
