@@ -5,7 +5,8 @@
 ```bash
 pip install -r requirements.txt --break-system-packages
 cp .streamlit/secrets.toml.example .streamlit/secrets.toml
-# Open secrets.toml and fill in your actual Snowflake account info and Anthropic API key
+# Open secrets.toml and fill in your actual Snowflake account info, Anthropic API key,
+# and SMTP credentials (defaults to a free Mailtrap sandbox inbox — see below)
 streamlit run app.py
 ```
 
@@ -19,6 +20,20 @@ streamlit run app.py
    answers, and the executed SQL can be expanded to view
 4. **Dashboard** — Summary of this month's revenue/discount losses/purchase
    spend, salmon purchase-vs-sales trend, revenue ranking by item
+
+## Supplier Price-Alert Emails (SMTP)
+
+When a price increase is detected on invoice upload, the "📧 Notify supplier"
+button sends an email via the SMTP provider configured under `[smtp]` in
+`secrets.toml`. By default this points at [Mailtrap](https://mailtrap.io)'s
+free sandbox inbox, so no real supplier ever receives an email during a demo
+— everything lands in your Mailtrap inbox instead.
+
+To switch providers (e.g. Gmail, Office365, Amazon SES) later, change
+`provider` (and credentials) in `secrets.toml` — see
+`streamlit_app/lib/smtp/providers.py` for the preset list. No application
+code needs to change; `provider = "custom"` plus explicit `host`/`port` also
+works for anything not in the preset list.
 
 ## Works Without a Snowflake Connection (Demo Mode)
 

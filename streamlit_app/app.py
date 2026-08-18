@@ -24,6 +24,7 @@ from lib.invoice import save_purchase_invoice
 from lib.sales import save_daily_sales
 from lib.alerts import detect_price_changes
 from lib.actions import record_alert, update_menu_price, suggest_price_adjustment, update_waste_pct
+from lib.smtp import send_email, price_alert_email
 
 
 
@@ -361,7 +362,7 @@ with tab_purchase:
                                             st.caption("No alternative vendor found")
 
                                     # Action buttons
-                                    btn_col1, btn_col2, btn_col3 = st.columns(3)
+                                    btn_col1, btn_col2, btn_col3, btn_col4 = st.columns(4)
                                     with btn_col1:
                                         if st.button("📝 Record alert", key=f"record_alert_{idx}"):
                                             try:
@@ -402,6 +403,22 @@ with tab_purchase:
                                                     st.success(f"Waste % set to {new_waste}%")
                                                 except Exception as e:
                                                     st.error(f"Failed: {e}")
+                                    with btn_col4:
+                                        supplier_email = st.text_input(
+                                            "Supplier email", key=f"supplier_email_{idx}",
+                                            placeholder="orders@supplier.com",
+                                        )
+                                        if st.button("📧 Notify supplier", key=f"notify_supplier_{idx}"):
+                                            if not supplier_email:
+                                                st.error("Enter a supplier email first")
+                                            else:
+                                                try:
+                                                    business_name = selected_business.split(" (")[0]
+                                                    subject, text_body, html_body = price_alert_email(business_name, alert)
+                                                    send_email(supplier_email, subject, text_body, html_body)
+                                                    st.success(f"Email sent to {supplier_email}")
+                                                except Exception as e:
+                                                    st.error(f"Failed to send email: {e}")
                             st.divider()
                     except Exception as e:
                         pass  # silently skip alerts if DB not available
