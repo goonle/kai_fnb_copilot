@@ -149,6 +149,8 @@ def ask_cortex_agent(question: str):
         answer_text = ""
         sql_used = None
         error_message = None
+        error_code = None
+        error_request_id = None
 
         for line in resp.text.splitlines():
             line = line.strip()
@@ -166,6 +168,8 @@ def ask_cortex_agent(question: str):
                 # This matches the shape of the error we saw:
                 # {"message": "...", "code": "...", "request_id": "..."}
                 error_message = event.get("message")
+                error_code = event.get("code")
+                error_request_id = event.get("request_id")
                 continue
 
             # Try a few common shapes for text/SQL content
@@ -190,10 +194,12 @@ def ask_cortex_agent(question: str):
             if _is_quota_shortage(resp.status_code, error_message):
                 return {"answer": QUOTA_SHORTAGE_MESSAGE, "sql": None, "chart_data": None,
                         "quota_exceeded": True}
-            return {
-                "answer": f"Agent returned an error: {error_message}",
-                "sql": None, "chart_data": None,
-            }
+            detail = f"Agent returned an error: {error_message}"
+            if error_code:
+                detail += f"\n\nError code: `{error_code}`"
+            if error_request_id:
+                detail += f"\nRequest ID: `{error_request_id}`"
+            return {"answer": detail, "sql": None, "chart_data": None}
 
         return {"answer": answer_text or f"Received a response but couldn't extract any text from it.\n\n"
                                           f"Raw response (first 1000 chars):\n{resp.text[:1000]}",
